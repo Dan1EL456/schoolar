@@ -1,10 +1,18 @@
 <?php
     //Config connection
+    $host     =  "aws-0-us-east-1.pooler.supabase.com";
+    $port     =  "6543"; //puerto de la BD en postgres
+    $dbname   =  "postgres"; // base de datos
+    $user     =  "postgres.zivrpepsffdfirtgjexp";
+    $password =  "sxabbaseY12vB";
+
+    /*
     $host     =  "localhost";
     $port     =  "5432"; //puerto de la BD en postgres
     $dbname   =  "schoolar"; // base de datos
     $user     =  "postgres";
     $password =  "xisdannylm";
+    */
 
     //Create connection.
     //Los que no tienen simbolo de $ son parametros, los que si tiene son variables 
