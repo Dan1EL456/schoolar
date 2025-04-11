@@ -6,6 +6,7 @@
     $user     =  "postgres.zivrpepsffdfirtgjexp";
     $password =  "sxabbaseY12vB";
 
+    //credenciales locales
     /*
     $host     =  "localhost";
     $port     =  "5432"; //puerto de la BD en postgres
@@ -26,12 +27,12 @@
     ");
 
     if(!$conn){
-        die("Connection error: " . pg_last_error());
+        //die("Connection error: " . pg_last_error());
 
     }else{
-        echo "Success connection";
+        //echo "Success connection";
     }
 
-    pg_close();
+    //pg_close();
 
 ?>
