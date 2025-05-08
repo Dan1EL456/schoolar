@@ -22,7 +22,7 @@
 	        password ='$enc_pass' and
 	        status = true
         GROUP BY
-            id
+            id;
     ";
 
     $res = pg_query($conn, $sql);
@@ -32,7 +32,7 @@
         if($row['total'] > 0){
             //echo "Login OK";
             $_SESSION['user_id'] = $row['id'];
-            header('Refresh:0; URL=http://localhost/schoolar/src/home.php');
+            header('Refresh: 0; URL= http://localhost/schoolar/src/home.php');
         }else {
             echo "Login failed";
         }
